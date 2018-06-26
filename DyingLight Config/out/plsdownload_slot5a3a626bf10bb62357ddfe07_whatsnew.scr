@@ -1,0 +1,97 @@
+sub main()
+{
+	Update("&WhatsNew_Drop0_Header2_Main&")
+	{
+		ID(0);
+		Header("&WhatsNew_Drop0_Header2_Main&");
+		Date("&WhatsNew_Drop0_Date&");
+		Image("WhatsNew_Drop0_Image2");
+		Paragraph("&WhatsNew_Drop0_Paragraph_2&");
+		Paragraph("&WhatsNew_Drop0_Paragraph_3&");
+		Image("WhatsNew_Drop0_Image3");
+		Paragraph("&WhatsNew_Drop0_Paragraph_4&");
+		Image("WhatsNew_Drop0_Image4");
+		Paragraph("&WhatsNew_Drop0_Paragraph_5&");
+		
+	}
+	Update("&WhatsNew_Drop0_Header_Main&")
+	{
+		ID(1);
+		Header("&WhatsNew_Drop0_Header_Main&");
+		Date("&WhatsNew_Drop0_Date&");
+		Image("WhatsNew_Drop0_Image1");
+		Paragraph("&WhatsNew_Drop0_Paragraph_1&");
+		Paragraph("&WhatsNew_Video&");
+		
+		Movie("dl_drop_reinforcements");
+	}
+	Update("&WhatsNew_Drop1_Header2_Main&")
+	{
+		ID(2);
+		Header("&WhatsNew_Drop1_Header2_Main&");
+		Date("&WhatsNew_Drop1_Date&");
+		Image("WhatsNew_Drop1_Image2");
+		Paragraph("&WhatsNew_Drop1_Paragraph_2&");
+		Paragraph("&WhatsNew_Video&");
+
+		Movie("dl_drop_hero");
+	}
+	Update("&WhatsNew_Drop1_Header_Main&")
+	{
+		ID(3);
+		Header("&WhatsNew_Drop1_Header_Main&");
+		Date("&WhatsNew_Drop1_Date&");
+		Image("WhatsNew_Drop1_Image1");
+		Paragraph("&WhatsNew_Drop1_Paragraph_1&");
+		Paragraph("&WhatsNew_Video&");
+		
+		Movie("dl_drop_lethalinventions");
+	}
+	Update("&WhatsNew_Drop2_Header_Main&")
+	{
+		ID(4);
+		Header("&WhatsNew_Drop2_Header_Main&");
+		Date("&WhatsNew_Drop2_Date&");
+		Image("WhatsNew_Drop2_Image1");
+		Paragraph("&WhatsNew_Drop2_Paragraph_1&");
+		Paragraph("&WhatsNew_Drop2_Paragraph_2&");
+		Paragraph("&WhatsNew_Drop2_Paragraph_3&");
+		Paragraph("&WhatsNew_Drop2_Paragraph_4&");
+		Paragraph("&WhatsNew_Video&");
+		
+		Movie("dl_drop_gunsilencer");
+	}
+	Update("&WhatsNew_Event1_Header_Main&")
+	{
+		ID(5);
+		Header("&WhatsNew_Event1_Header_Main&");
+		Date("&WhatsNew_Drop2_Date&");
+		Image("WhatsNew_Event1_Image1");
+		Paragraph("&WhatsNew_Event1_Paragraph_1&");
+		Paragraph("&WhatsNew_Event1_Paragraph_2&");
+		Paragraph("&WhatsNew_Event1_Paragraph_3&");
+		Paragraph("&WhatsNew_Event1_Paragraph_4&");
+
+	}
+	Update("&WhatsNew_Drop3_Header_Main&")
+	{
+		ID(6);
+		Hidden();
+		Header("&WhatsNew_Drop3_Header_Main&");
+		Date("&WhatsNew_Drop3_Date&");
+		Image("WhatsNew_Drop3_Image1");
+		Paragraph("&WhatsNew_Drop3_Paragraph_1&");
+		Paragraph("&WhatsNew_Drop3_Paragraph_2&");
+	}
+	Update("&WhatsNew_Event2_Header_Main&")
+	{
+		ID(7);
+		Hidden();
+		Header("&WhatsNew_Event2_Header_Main&");
+		Date("&WhatsNew_Drop3_Date&");
+		Image("WhatsNew_Event2_Image1");
+		Paragraph("&WhatsNew_Event2_Paragraph_1&");
+		Paragraph("&WhatsNew_Event2_Paragraph_2&");
+		Paragraph("&WhatsNew_Event2_Paragraph_3&");
+	}
+}

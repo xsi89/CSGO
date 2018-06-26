@@ -1,0 +1,65 @@
+sub main()
+{
+    // Global event that tracks the amount of collected candies
+    Stat("SuperServerAchievement")
+    {
+        XlastId(17111404);
+        ProgressType("number");
+        Category("Bounty");
+        BountyType("CommunityGlobal");
+        SaveLocation("profile");
+
+        IsNotRecyclable();
+
+        DialogNameAccomplished("&SSA_17111404_DialogNameAccomplished&");
+        DialogDescriptionAccomplished("&SSA_17111404_DialogDescriptionAccomplished&");
+        DialogNameFailed("&SSA_17111404_DialogNameFailed&");
+        DialogDescriptionFailed("&SSA_17111404_DialogDescriptionFailed&");
+        DialogNameFailedLocal("&SSA_17111404_DialogNameFailedLocal&");
+        DialogDescriptionFailedLocal("&SSA_17111404_DialogDescriptionFailedLocal&");
+
+        AvailableConditions()
+        {
+            PlayerTeam("Default");
+        }
+
+        PrimaryObjective()
+        {
+            GlobalCount(2000000)
+            {
+                HudOnAccomplishedStay();
+                Name("&SSA_17111404_GlobalCount&");
+            }
+
+            LocalCount(1)
+            {
+                Name("&SSA_17111404_LocalCount&");
+                FormatString("&Bounty_TimeFmt&");
+                HudOnAccomplishedNoAnimation();
+                AlwaysShowCount();
+                Objective()
+                {
+                    Count(1)
+                    {
+                        RefName("Present_Taken");
+                        Event("Evn_ItemTakenDropped")
+                        {
+                            action("take");
+                            ItemsSet("Liveops_Christmas_Candy_1;Liveops_Christmas_Candy_2;Liveops_Christmas_Candy_3;Liveops_Christmas_Candy_4;Liveops_Christmas_Candy_5;Liveops_Christmas_Candy_6;Liveops_Christmas_Candy_7;Liveops_Christmas_Candy_8");
+                        }
+                    }
+                    Count(4) //It's necessary here to work properly. Why? No one knows.
+                    {
+                        PrerequisiteCount("Present_Taken", "Reached");
+                        Event("Evn_GameDeltaTimePassed")
+                        {
+                            AfterTime(100);
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+}

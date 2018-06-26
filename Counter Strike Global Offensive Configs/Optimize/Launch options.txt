@@ -1,0 +1,1 @@
+-tickrate 128 -high -nod3d9ex -nojoy -threads 8 -noforcemparms -noforcemaccel -novid -refresh 144 -freq 144 +mat_queue_mode 2 +exec autoexec.cfg

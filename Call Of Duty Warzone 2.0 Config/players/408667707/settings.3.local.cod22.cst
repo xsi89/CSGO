@@ -54,7 +54,7 @@ VoiceChat:0.0 = "true"
 VoiceChatEffect:0.0 = "mw_default" // one of [mw_default, mw, mw_classic]
 
 // Adjusts volume of other player voices in voice chat
-VoiceChatVolume:1.0 = "1.000000" // 0.000000 to 4.000000
+VoiceChatVolume:2.0 = "2.000000" // 0.000000 to 4.000000
 
 // Microphone device used for voice chat
 VoiceInputDevice:0.0 = "Default Communication Device" // one of [Default Communication Device, Default System Device]
@@ -89,7 +89,7 @@ ADSFovScaling:0.0 = "true"
 Fov:0.0 = "100.000000" // 60.000000 to 120.000000
 
 // 3rd Person Field of View
-ThirdPersonFov:0.0 = "80.690002" // 70.000000 to 90.000000
+ThirdPersonFov:0.0 = "90.000000" // 70.000000 to 90.000000
 
 //
 // Graphics
@@ -173,7 +173,7 @@ MouseFlyingVehicleInvertPitch:0.0 = "false"
 MouseGroundVehicleInvertPitch:0.0 = "false"
 
 // Adjusts mouse sensitivity for both axes
-MouseHorizontalSensibility:0.0 = "12.000000" // 0.010000 to 100.000000
+MouseHorizontalSensibility:0.0 = "16.000000" // 0.010000 to 100.000000
 
 // Multiplies mouse sensitivity when selecting a target on a map through a streak
 MouseInGameTabletSensitivity:0.0 = "1.000000" // 0.100000 to 2.000000

@@ -114,11 +114,8 @@ CapFps:0.0 = "true"
 // Adds blur on out of focus areas when aiming down sights
 DepthOfField:0.0 = "false"
 
-// Adjusts the strength of the visual noise applied in-game
-FilmGrain:0.0 = "0.000000" // 0.000000 to 1.000000
-
 // Custom maximum frames per second when in a match
-MaxFpsInGame:0.0 = "250" // 30 to 300
+MaxFpsInGame:0.0 = "300" // 30 to 300
 
 // Custom maximum frames per second when in menus
 MaxFpsInMenu:1.0 = "120" // 30 to 300
@@ -188,7 +185,7 @@ HDR:0.0 = "Off" // one of [Off, On, Automatic]
 ModelLodDistanceQuality:0.0 = "High Quality" // one of [High Quality, Base Quality]
 
 // Models quality
-ModelLodQuality:0.0 = "High quality" // one of [High quality, Base quality]
+ModelLodQuality:0.0 = "Base quality" // one of [High quality, Base quality]
 
 // Enable NVIDIA Image Scaling
 NVIDIAImageScaling:0.0 = "true"
@@ -209,7 +206,7 @@ ParticleQualityLevel:0.0 = "low" // one of [very low, low, medium, high]
 ParticuleResolution:0.0 = "true"
 
 // Enable persistent damage layer
-PersistentDamageLayer:0.0 = "true"
+PersistentDamageLayer:0.0 = "false"
 
 // Particle Lighting quality level
 PixelPerLightmapTexel:0.0 = "64.000000" // 1.000000 to 256.000000
@@ -221,7 +218,7 @@ ReflectionProbeHalfResolution:0.0 = "true"
 ReflectionProbeRelighting:0.0 = "4" // 1 to 4
 
 // SMAA Quality level
-SMAAQuality:0.0 = "SMAA_QUALITY_MEDIUM" // one of [SMAA_QUALITY_LOW, SMAA_QUALITY_MEDIUM, SMAA_QUALITY_HIGH, SMAA_QUALITY_ULTRA]
+SMAAQuality:0.0 = "SMAA_QUALITY_LOW" // one of [SMAA_QUALITY_LOW, SMAA_QUALITY_MEDIUM, SMAA_QUALITY_HIGH, SMAA_QUALITY_ULTRA]
 
 // Screen-space ambient occlusion method
 SSAOTechnique:0.0 = "Off" // one of [Off, GTAO, MDAO, GTAO & MDAO]
@@ -233,13 +230,13 @@ SSRMode:0.0 = "Off" // one of [Off, Deferred LQ, Deferred HQ]
 ScreenSpaceShadowQuality:0.0 = "Off" // one of [Off, Low, High]
 
 // Select the shader quality setting
-ShaderQuality:0.0 = "Low" // one of [Default, Medium, Low]
+ShaderQuality:0.0 = "Medium" // one of [Default, Medium, Low]
 
 // Shadow resolution quality level
-ShadowMapResolution:1.0 = "Low" // one of [Very Low, Low, Normal, High, Extra, Ultra]
+ShadowMapResolution:1.0 = "Normal" // one of [Very Low, Low, Normal, High, Extra, Ultra]
 
 // Adjust size of Spot Shadow Cache
-SpotShadowCacheSize:0.0 = "1" // 0 to 3
+SpotShadowCacheSize:0.0 = "0" // 0 to 3
 
 // Quality level of spot shadow
 SpotShadowQualityLevel:0.0 = "Low" // one of [Low, Medium, High]
@@ -251,13 +248,13 @@ StaticSunshadowClipmapResolution:0.0 = "1024" // 0 to 2147483647
 SubdivisionLevel:0.0 = "3" // 0 to 8
 
 // Quality level of shadows from the sun at a distance
-SunShadowCascade:0.0 = "Normal (2-3 cascades)" // one of [Low    (1 cascade), Normal (2-3 cascades)]
+SunShadowCascade:0.0 = "High   (2-3 cascades)" // one of [Low    (1 cascade), Medium (1-2 cascades), High   (2-3 cascades)]
 
 // Tessellation quality level
 Tessellation:0.0 = "0_Off" // one of [0_Off, 1_Near, 2_All]
 
 // Texture filtering quality level
-TextureFilter:0.0 = "TEXTURE_FILTER_ANISO16X" // one of [TEXTURE_FILTER_NEAREST, TEXTURE_FILTER_LINEAR, TEXTURE_FILTER_ANISO2X, TEXTURE_FILTER_ANISO4X, TEXTURE_FILTER_ANISO8X, TEXTURE_FILTER_ANISO16X, TEXTURE_FILTER_CMP]
+TextureFilter:0.0 = "TEXTURE_FILTER_ANISO8X" // one of [TEXTURE_FILTER_NEAREST, TEXTURE_FILTER_LINEAR, TEXTURE_FILTER_ANISO2X, TEXTURE_FILTER_ANISO4X, TEXTURE_FILTER_ANISO8X, TEXTURE_FILTER_ANISO16X, TEXTURE_FILTER_CMP]
 
 // Texture quality level, high to low ( higher number means lower resolution )
 TextureQuality:0.0 = "2" // 0 to 3
@@ -265,8 +262,8 @@ TextureQuality:0.0 = "2" // 0 to 3
 // Ui Quality
 UiQuality:0.0 = "Auto" // one of [1080P, 4K, Auto]
 
-// Use large physical textures
-VirtualTexturingLargeMemory:0.0 = "true"
+// Sets which memory mode to use for physical textures. 0:Extra small (11x11, 121 slots), 1:Small (16x16, 256 slots), 2:Medium (23x23, 529 slots), 3:Large (32x32, 1024 slots), 4:Extra large (45x45, 2025 slots). 
+VirtualTexturingMemoryMode:0.1 = "Large" // one of [Extra Small, Small, Medium, Large, Extra Large]
 
 // Volumetric quality
 VolumetricQuality:0.0 = "QUALITY_LOW" // one of [QUALITY_LOW, QUALITY_MEDIUM, QUALITY_HIGH]
@@ -311,8 +308,14 @@ ConfigCloudStorageEnabled:1.0 = "true"
 RecommendedSet:0.0 = "true"
 
 // Thread count for handling the job queue
-RendererWorkerCount:0.0 = "9" // -1 to 16
+RendererWorkerCount:0.0 = "10" // -1 to 16
 
 // Set a target fraction of your PC's video memory to be used by the game
 VideoMemoryScale:0.0 = "0.900000" // 0.000000 to 2.000000
+
+// Adjusts the strength of the visual noise applied in-game
+FilmGrain:0.0 = "0.000000" // 0.000000 to 1.000000
+
+// Use large physical textures
+VirtualTexturingLargeMemory:0.0 = "false"
 
